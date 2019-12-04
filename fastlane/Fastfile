@@ -17,7 +17,7 @@ default_platform(:ios)
 
 platform :ios do
   lane :tests do
-  	run_tests(workspace: "Numero.xcodeproj",
+  	run_tests(project: "Numero.xcodeproj",
             devices: ["iPhone 11"],
             scheme: "NumeroTests")
 	end
