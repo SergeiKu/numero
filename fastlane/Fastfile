@@ -33,16 +33,15 @@ platform :ios do
   desc "This will also make sure the profile is up to date"
   lane :beta do
     # match(type: "appstore") # more information: https://codesigning.guide
-    gym # Build your app - more options available
-    pilot
+    gym (scheme: "Numero")# Build your app - more options available
+    pilot (scheme: "Numero")
 
     # sh "your_script.sh"
     # You can also use other beta testing services here (run `fastlane actions`)
-	lane :beta do
+	
   		sync_code_signing(type: "appstore")    # see code signing guide for more information
   		build_app(scheme: "Numero")
   		upload_to_testflight(scheme: "Numero")
-	end
   end
 
   desc "Deploy a new version to the App Store"
