@@ -375,6 +375,7 @@
 				DEVELOPMENT_TEAM = CHZJAHSJ6N;
 				INFOPLIST_FILE = Numero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergeyKudryavtsev.Numero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "CI Test Profile";
@@ -394,6 +395,7 @@
 				DEVELOPMENT_TEAM = CHZJAHSJ6N;
 				INFOPLIST_FILE = Numero/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.sergeyKudryavtsev.Numero;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "CI Test Distribution";
