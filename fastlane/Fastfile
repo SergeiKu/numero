@@ -18,7 +18,16 @@ default_platform(:ios)
 platform :ios do
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    build_app(scheme: "Numero")
+    # build_app(scheme: "Numero")
     # upload_to_testflight
+build_ios_app(
+  scheme: "Numero",
+  export_options: {
+    method: "app-store",
+    provisioningProfiles: { 
+      "com.sergeyKudryavtsev.Numero" => "CI Test Distribution"
+    }
+  }
+)
   end
 end
