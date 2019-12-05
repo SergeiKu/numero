@@ -22,12 +22,7 @@ platform :ios do
     # upload_to_testflight
 build_ios_app(
   scheme: "Numero",
-  export_options: {
-    method: "app-store",
-    provisioningProfiles: { 
-      "com.sergeyKudryavtsev.Numero" => "CI Test Distribution"
-    }
-  }
+  export_xcargs: "-allowProvisioningUpdates"
 )
   end
 end
